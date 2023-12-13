@@ -1,0 +1,18 @@
+{
+  "name": "crud-poducts",
+  "version": "1.0.0",
+  "description": "API Rest CRUD ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/app.js"
+  },
+  "author": "maicol ismael bautista rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "nodemon": "^3.0.2"
+  }
+}
