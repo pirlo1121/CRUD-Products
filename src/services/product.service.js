@@ -1,7 +1,7 @@
  const ProductModel = require( '../models/product' );
 
- async function registerProduct(){
-    return await ProductModel.create( prodcut );
+ async function registerProduct( product ){
+    return await ProductModel.create( product );
  }
 
  async function getAllProducts(){
@@ -13,7 +13,7 @@
  }
 
  async function removeOneProductById(id ){
-    return await ProductModel.findOneAndRemove({_id: id});
+    return await ProductModel.findByIdAndDelete({_id: id});
  }
 
  async function updateOneProductById(id , updateProduct){
