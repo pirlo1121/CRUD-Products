@@ -21,7 +21,7 @@ const ProductSchema = new Schema({
         required: true,
         default: 'non-category'
     },
-    urlImage: String,
+    urlImage: String, //todo: poner multer para agregar imagenes
     userId: {
         type: String,
         required: true
@@ -30,6 +30,6 @@ const ProductSchema = new Schema({
     timestamps: true
 });
 
-const ProductModel = model('Product', ProductSchema);
+const ProductModel = model('Product', ProductSchema); // nombre de la coleccion y estructura
 
 module.exports = ProductModel;
