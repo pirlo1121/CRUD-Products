@@ -4,7 +4,7 @@
     return await ProductModel.create( prodcut );
  }
 
- async function getAllProduct(){
+ async function getAllProducts(){
     return await ProductModel.find();
  }
 
@@ -26,7 +26,7 @@
 
  module.exports = {
     registerProduct,
-    getAllProduct,
+    getAllProducts,
     getOneProductById,
     removeOneProductById,
     updateOneProductById
