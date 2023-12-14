@@ -10,7 +10,8 @@ const PORT = process.env.PORT || 3000;
 app.use( cors() );
 app.use( express.json() );
 
-// app.use( '', require(''));
+app.use( '/api/products', require('./routes/products.routes.js'));
+// app.use( '/api/auth', require(''));
 
 dbConection();
 
